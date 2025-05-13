@@ -1,3 +1,1 @@
-ALTER TABLE products ADD quantity INTEGER NOT NULL
-
-ALTER TABLE products DROP COLUMN quantity
+ALTER TABLE products RENAME COLUMN name TO description 
