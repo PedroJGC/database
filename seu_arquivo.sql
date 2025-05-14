@@ -1,1 +1,1 @@
-ALTER TABLE products RENAME COLUMN name TO description 
+ALTER TABLE products RENAME TO items
