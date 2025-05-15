@@ -1,1 +1,1 @@
-ALTER TABLE products RENAME TO items
+DROP TABLE products
