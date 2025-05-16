@@ -1,3 +1,1 @@
-SELECT * FROM products
-
-UPDATE products SET price = 45.90 WHERE id = 1
+SELECT * FROM products WHERE price = 1200
