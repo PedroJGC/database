@@ -1,1 +1,1 @@
-SELECT * FROM products WHERE price = 1200
+SELECT * FROM products WHERE name LIKE '%head%' 
