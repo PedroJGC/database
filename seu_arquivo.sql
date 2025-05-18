@@ -1,16 +1,7 @@
 SELECT * FROM products
 
--- Seleciona valores diferentes.
-SELECT * FROM products WHERE price <> 800
+-- O operador AND retorna os registros que atende todos os critérios (TRUE/TRUE).
+SELECT * FROM products WHERE price > 500 AND price < 1000
 
--- Seleciona valores maiores.
-SELECT * FROM products WHERE price > 500.50
-
--- Seleciona valores menores.
-SELECT * FROM products WHERE price < 600
-
--- Seleciona valor maior ou igual.
-SELECT * FROM products WHERE price >= 500.50
-
--- Seleciona valor menor ou igual.
-SELECT * FROM products WHERE price <= 800
+-- O operador OR retorna os registros que atende pelo menos um dos critérios (FALSE/TRUE).
+SELECT * FROM products WHERE price > 500 OR price < 1000
