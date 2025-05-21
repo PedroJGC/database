@@ -1,5 +1,12 @@
--- Seleciona mútiplos valores númericos.
-SELECT * FROM products WHERE price IN (800, 550, 1200)
+-- ASC (ascentente/crescente)
+SELECT * FROM products ORDER BY price
+SELECT * FROM products ORDER BY price ASC
 
--- Seleciona mútiplos valores do tipo texto.
-SELECT * FROM products WHERE category IN ('image', 'audio')
+-- DESC (descendente/decrescente)
+SELECT * FROM products ORDER BY price DESC
+
+-- WHERE + ORDER BY
+SELECT * FROM products WHERE category = 'audio' ORDER BY price DESC
+
+-- ORDER BY com texto
+SELECT * FROM products ORDER BY name
