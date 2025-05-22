@@ -1,3 +1,3 @@
-SELECT COUNT(*) FROM products
+SELECT SUM(price) FROM products
 
-SELECT COUNT(*) FROM products WHERE price >= 600
+SELECT SUM(price) FROM products WHERE category = 'audio'
