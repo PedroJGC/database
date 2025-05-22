@@ -1,1 +1,3 @@
-SELECT * FROM products ORDER BY price DESC LIMIT 3
+SELECT COUNT(*) FROM products
+
+SELECT COUNT(*) FROM products WHERE price >= 600
