@@ -1,3 +1,7 @@
-SELECT SUM(price) FROM products
+SELECT * FROM products
 
-SELECT SUM(price) FROM products WHERE category = 'audio'
+SELECT AVG(price) FROM products
+
+SELECT AVG(price) FROM products WHERE category = 'audio'
+
+-- average
