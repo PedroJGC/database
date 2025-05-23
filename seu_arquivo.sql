@@ -1,7 +1,5 @@
 SELECT * FROM products
 
-SELECT AVG(price) FROM products
-
-SELECT AVG(price) FROM products WHERE category = 'audio'
-
--- average
+SELECT category, COUNT(*) AS total 
+FROM products
+GROUP BY category
