@@ -1,5 +1,4 @@
-SELECT * FROM products
-
-SELECT category, COUNT(*) AS total 
-FROM products
-GROUP BY category
+CREATE TABLE students (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL
+)
