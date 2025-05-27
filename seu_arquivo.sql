@@ -1,9 +1,3 @@
-INSERT INTO student_address
-(student_id, street, city)
-VALUES
-(1, 'Rua São jõao', 'São Paulo')
-
-INSERT INTO student_address
-(student_id, street, city)
-VALUES
-(2, 'Rua Dom Pedro', 'Rio de Janeiro')
+SELECT a.id, a.student_id, s.name, a.street, a.city 
+FROM student_address AS a
+INNER JOIN students AS s ON s.id = a.student_id
