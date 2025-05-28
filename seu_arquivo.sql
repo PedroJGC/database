@@ -1,3 +1,8 @@
-SELECT a.id, a.student_id, s.name, a.street, a.city 
-FROM student_address AS a
-INNER JOIN students AS s ON s.id = a.student_id
+-- Um curso tem MUITOS módulos: 1:N - Um para Muitos
+CREATE TABLE course_modules (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL, 
+  course_id INTEGER NOT NULL,
+  
+  FOREIGN KEY (course_id) REFERENCES courses(id)
+)
