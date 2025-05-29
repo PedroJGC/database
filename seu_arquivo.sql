@@ -1,12 +1,3 @@
-INSERT INTO course_modules
-(name, course_id)
-VALUES
-('Fundamentos do CSS', 2),
-('Layout com CSS', 2),
-('CSS Functions', 2);
-
-INSERT INTO course_modules
-(name, course_id)
-VALUES
-('Fundamentos do HTML', 1),
-('Formulários', 1);
+SELECT m.id, m.name, m.course_id, c.name
+FROM course_modules AS m
+INNER JOIN courses AS c ON c.id = m.course_id
