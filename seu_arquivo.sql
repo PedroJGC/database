@@ -1,3 +1,8 @@
-SELECT m.id, m.name, m.course_id, c.name
-FROM course_modules AS m
-INNER JOIN courses AS c ON c.id = m.course_id
+CREATE TABLE students_courses (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+  student_id INTEGER NOT NULL,
+  course_id INTEGER NOT NULL,
+  
+  FOREIGN KEY (student_id) REFERENCES students(id),
+  FOREIGN KEY (course_id) REFERENCES students(id)
+)
