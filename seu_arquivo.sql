@@ -1,9 +1,4 @@
-INSERT INTO students_courses
-(student_id, course_id)
-VALUES 
-(1, 1)
-
-SELECT * FROM students
-SELECT * FROM courses
-
-SELECT * FROM students_courses
+SELECT sc.id, sc.student_id, s.name AS student_name, sc.course_id, c.name AS course_name 
+FROM students_courses AS sc
+INNER JOIN students AS s ON s.id = sc.student_id
+INNER JOIN courses AS c ON c.id = sc.course_id
